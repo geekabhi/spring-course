@@ -1,0 +1,20 @@
+[
+    {
+        "_class": "com.example.samples.course.domain.Course",
+        "title": "Java",
+        "description": "Java beginner",
+        "duration": "3-hours",
+        "professor": "Ashok",
+        "startDate": "2021-02-10T00:00:00.000+00:00",
+        "endDate": "2021-02-10T00:00:00.000+00:00"
+    },
+    {
+        "_class": "com.example.samples.course.domain.Course",
+        "title": "Python",
+        "description": "Python script",
+        "duration": "3-hours",
+        "professor": "Joshua",
+        "startDate": "2021-02-10T00:00:00.000+00:00",
+        "endDate": "2021-02-10T00:00:00.000+00:00"
+    }
+]

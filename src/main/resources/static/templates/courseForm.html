@@ -1,0 +1,42 @@
+<div class="modal-header">
+    <h3 ng-show="courseAction === 'add'">Add an course</h3>
+    <h3 ng-show="courseAction === 'update'">Edit an course</h3>
+</div>
+<div class="modal-body">
+    <form name="courseForm" role="form">
+        <div class="form-group has-feedback" ng-class="{'has-warning': courseForm.title.$invalid, 'has-success': courseForm.title.$valid}">
+            <label for="title">Course Title</label>
+            <input type="text" class="form-control input-large" id="title" name="title" required ng-model="course.title">
+            <span class="glyphicon form-control-feedback" ng-class="{'glyphicon-warning-sign': courseForm.title.$invalid, 'glyphicon-ok': courseForm.title.$valid}"></span>
+        </div>
+        <div class="form-group has-feedback" ng-class="{'has-warning': courseForm.description.$invalid, 'has-success': courseForm.description.$valid}">
+            <label for="description">Description</label>
+            <input type="text" class="form-control input-large" id="description" name="description" required ng-model="course.description">
+            <span class="glyphicon form-control-feedback" ng-class="{'glyphicon-warning-sign': courseForm.description.$invalid, 'glyphicon-ok': courseForm.description.$valid}"></span>
+        </div>
+        <div class="form-group has-feedback" ng-class="{'has-warning': courseForm.duration.$invalid, 'has-success': courseForm.duration.$valid}">
+            <label for="duration">Duration</label>
+            <input type="text" class="form-control input-small" id="duration" name="duration" required ng-model="course.duration">
+            <span class="glyphicon form-control-feedback" ng-class="{'glyphicon-warning-sign': courseForm.duration.$invalid, 'glyphicon-ok': courseForm.duration.$valid}"></span>
+        </div>
+        <div class="form-group has-feedback" ng-class="{'has-warning': courseForm.professor$invalid, 'has-success': courseForm.professor$valid}">
+            <label for="professor">Professor</label>
+            <input type="text" class="form-control input-medium" id=professor name="professor" required ng-model="course.professor">
+            <span class="glyphicon form-control-feedback" ng-class="{'glyphicon-warning-sign': courseForm.professor$invalid, 'glyphicon-ok': courseForm.professor$valid}"></span>
+        </div>
+        <div class="form-group has-feedback" ng-class="{'has-warning': courseForm.startDate.$invalid, 'has-success': courseForm.startDate.$valid}">
+            <label for="startDate">Start Date</label>
+            <input type="date" class="form-control input-small" id="startDate" name="startDate" required ng-model="course.startDate">
+            <span class="glyphicon form-control-feedback" ng-class="{'glyphicon-warning-sign': courseForm.startDate.$invalid, 'glyphicon-ok': courseForm.startDate.$valid}"></span>
+        </div>
+        <div class="form-group has-feedback" ng-class="{'has-warning': courseForm.endDate$invalid, 'has-success': courseForm.endDate$valid}">
+            <label for="endDate">End Date</label>
+            <input type="date" class="form-control input-medium" id=endDate name="endDate" required ng-model="course.endDate">
+            <span class="glyphicon form-control-feedback" ng-class="{'glyphicon-warning-sign': courseForm.endDate$invalid, 'glyphicon-ok': courseForm.endDate$valid}"></span>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary btn-md active" ng-disabled="courseForm.$invalid" ng-click="ok()" >OK</button>
+    <button class="btn btn-warning btn-md active" ng-click="cancel()">Cancel</button>
+</div>
