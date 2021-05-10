@@ -35,7 +35,10 @@ It is using Angular 1.2 for UI and Spring boot 2.4.0 version.
 
 It has following coding structure:
 
-domain: This contains the JPA entity of Course with id(auto generated), title, description, duration etc.
-repsositories: This is a JPA repository of Course to usind CRUD (Create, Read, Update, Delete) operations.
-web: This contains the controller to do the api REST operations.
-resources/static: This contains the static html, js, and css for rendering the UI.
+*domain:* This contains the JPA entity of Course with id(auto generated), title, description, duration etc.
+
+*repsositories:* This is a JPA repository of Course to usind CRUD (Create, Read, Update, Delete) operations.
+
+*web:* This contains the controller to do the api REST operations.
+
+*resources/static:* This contains the static html, js, and css for rendering the UI.
