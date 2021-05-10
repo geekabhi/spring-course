@@ -6,6 +6,8 @@
             <th>Description</th>
             <th>Duration</th>
             <th>Professor</th>
+            <th>Start Date</th>
+            <th>End Date</th>
             <th></th>
         </tr>
         </thead>
@@ -13,6 +15,9 @@
         <tr ng-repeat="course in courses | orderBy:sortField:sortDescending">
             <td>
                 <in-place-edit field-name='title' input-type='text' input-class='input-large' model=course>{{course.title}}</in-place-edit>
+            </td>
+            <td>
+                <in-place-edit field-name='description' input-type='text' input-class='input-small' model=course>{{course.description}}</in-place-edit>
             </td>
             <td>
                 <in-place-edit field-name='duration' input-type='text' input-class='input-small' model=course>{{course.duration}}</in-place-edit>
