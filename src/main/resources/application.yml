@@ -3,6 +3,8 @@ spring:
     generate-ddl: true
     
 management:
+  security:
+    enabled: false
   endpoints:
     web:
       exposure:
@@ -10,3 +12,12 @@ management:
   endpoint:
     health:
       show-details: always
+
+# ---
+# spring:
+#   profiles: DEV
+#   database strings:
+# ---
+# spring:
+#   profiles: QA
+#   database strings:
